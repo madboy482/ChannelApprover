@@ -91,7 +91,7 @@ bot_username = bot.loop.run_until_complete(get_me())
 start_msg = """Hi {user}!
 **I'm a channel approver bot, mainly focused on working with the new [Admin Approval Invite Links](https://t.me/telegram/153).**
 **__I can__**:
-- __Auto approve new join requests.__
+- __Auto Approve New Join Requests.__
 - __Auto Decline New Join Requests.__
 `Click the below button to know how to use me!`
 
