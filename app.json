@@ -1,0 +1,37 @@
+{
+    "name": "Channel Approver Bot",
+    "description": "Channel Approver Bot for telegram, by @madboy482.",
+    "logo": "",
+    "keywords": [
+        "telegram",
+        "telethon",
+        "telegram-bot",
+        "madboy482"
+    ],
+    "repository": "https://github.com/madboy482/ChannelApprover",
+    "website": "madboy482.me",
+    "success_url": "https://telegram.me/Phoenix_MadBoi",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Bot token, get it from @BotFather.",
+            "value": ""
+        },
+        "REDIS_URI": {
+            "description": "Redis database URL, from redislabs.com",
+            "value": ""
+        },
+        "REDIS_PASSWORD": {
+            "description": "Redis database password, from redislabs.com.",
+            "value": ""
+        },
+        "OWNERS": {
+            "description": "User ID of users who own the bot, split by space.",
+            "value": "1848538465 1355604983"
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ]
+}
