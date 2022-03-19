@@ -91,6 +91,7 @@ bot_username = bot.loop.run_until_complete(get_me())
 start_msg = """Hi {user}!
 **I'm a channel approver bot, mainly focused on working with the new [Admin Approval Invite Links](https://t.me/telegram/153).**
 **__I can__**:
+
 - __Auto Approve New Join Requests.__
 - __Auto Decline New Join Requests.__
 `Click the below button to know how to use me!`
@@ -127,7 +128,7 @@ async def start_in(event):
 @bot.on(events.CallbackQuery(data="helper"))
 async def helper(event):
     await event.edit(
-        '**Usage instructions.**\n\nAdd me to your channel, as administrator, with "add users" permission, and forward me a message from that chat to set me up!',
+        '**Usage instructions.**\n\nAdd me to your channel, as administrator, with "Add Users" permission, and forward me a message from that chat to set me up!',
         buttons=Button.inline("Main Menu 📭", data="start"),
     )
 
